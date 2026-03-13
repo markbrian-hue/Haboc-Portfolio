@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander T. Haboc | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">
+                    <img src="img/logo.jpg" alt="Haboc Logo" class="personal-logo">
+                </a>
+            </div>
+            
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="hero-container">
+            <div class="hero-text">
+                <p class="greeting">Hello, I'm</p>
+                <h1>ALEXANDER T. HABOC</h1>
+                <p class="subtitle"><span id="typewriter"></span><span class="cursor">|</span></p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn primary">Get In Touch</a>
+                    <a href="#projects" class="btn secondary">View Work</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="img/profile.jpg" alt="Alexander T. Haboc" class="profile-img">
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="reveal">
+        <h2>About Me</h2>
+        <div class="glass-panel">
+            <p>I am a 24-year-old IT professional from Quezon City. I am equally effective working independently and within a team. I am extremely motivated and passionate about what I do. With strong interpersonal and communication skills, I excel at handling different circumstances and working effectively with diverse groups of people.</p>
+        </div>
+    </section>
+
+    <section id="experience" class="reveal">
+        <h2>Work Experience</h2>
+        <div class="grid-layout">
+            <div class="card glass-card">
+                <div class="card-header">
+                    <img src="img/bk-logo.png" alt="Burger King" class="company-logo">
+                    <div>
+                        <h3>Supervisor</h3>
+                        <p class="meta">Burger King (SM Fairview) | 2022 - Present</p>
+                    </div>
+                </div>
+                <p>Overseeing daily operations, managing team performance, and ensuring high-quality customer service in a fast-paced environment.</p>
+            </div>
+
+            <div class="card glass-card">
+                <div class="card-header">
+                    <img src="img/711-logo.png" alt="7 Eleven" class="company-logo">
+                    <div>
+                        <h3>Clerk</h3>
+                        <p class="meta">7 Eleven (Brittany) | 2021 - 2022</p>
+                    </div>
+                </div>
+                <p>Managed inventory, customer transactions, and maintained store standards.</p>
+            </div>
+
+            <div class="card glass-card">
+                <div class="card-header">
+                    <img src="img/jollibee-logo.png" alt="Jollibee" class="company-logo">
+                    <div>
+                        <h3>Crew</h3>
+                        <p class="meta">Jollibee (Quezon Ave.) | 2018 - 2020</p>
+                    </div>
+                </div>
+                <p>Provided excellent customer service and maintained operational efficiency.</p>
+            </div>
+
+            <div class="card glass-card">
+                <div class="card-header">
+                    <img src="img/711-logo.png" alt="7 Eleven" class="company-logo">
+                    <div>
+                        <h3>Clerk</h3>
+                        <p class="meta">7 Eleven (Frisco) | 2015 - 2018</p>
+                    </div>
+                </div>
+                <p>Handled daily store operations and point-of-sale transactions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="reveal">
+        <h2>Development Portfolio</h2>
+        <div class="grid-layout">
+            
+            <div class="card glass-card interactive-card" onclick="openModal('modal-celestia')">
+                <img src="img/thecelestiahotle.jpg" alt="Celestia Hotel" class="project-thumbnail">
+                <h3>Celestia Hotel</h3>
+                <span class="badge">Luxury Travel Web</span>
+                <p>A sophisticated, responsive website designed for a luxury travel client to handle high-end bookings.</p>
+                <span class="click-hint">Click to see features →</span>
+            </div>
+
+            <div class="card glass-card interactive-card" onclick="openModal('modal-driver')">
+                <img src="img/driver.jpg" alt="Driver Drowsiness App" class="project-thumbnail app-thumbnail">
+                <h3>Driver Drowsiness App</h3>
+                <span class="badge">Mobile Application</span>
+                <p>An intelligent mobile application designed to detect driver fatigue in real-time to prevent accidents.</p>
+                <span class="click-hint">Click to see features →</span>
+            </div>
+
+            <div class="card glass-card interactive-card" onclick="openModal('modal-pos')">
+                <img src="img/91cafe.jpg" alt="Coffee Shop POS" class="project-thumbnail">
+                <h3>Coffee Shop POS System</h3>
+                <span class="badge">Custom Software</span>
+                <p>Designed and developed a responsive Point of Sale system tailored specifically for a coffee shop.</p>
+                <span class="click-hint">Click to see features →</span>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="education" class="reveal">
+        <h2>Education</h2>
+        <div class="grid-layout">
+            <div class="card glass-card">
+                <h3>BS Information Technology</h3>
+                <p class="meta">Quezon City University | 2023 - Present</p>
+            </div>
+             <div class="card glass-card">
+                <h3>BS Criminology</h3>
+                <p class="meta">University of Manila | 2019 - 2021</p>
+            </div>
+            <div class="card glass-card">
+                <h3>Grade 12 STEM</h3>
+                <p class="meta">AMA University | 2017 - 2019</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="reveal">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-tag">Web Development (Custom, WordPress, Wix)</div>
+            <div class="skill-tag">Leadership</div>
+            <div class="skill-tag">Independent Work</div>
+            <div class="skill-tag">Organization</div>
+            <div class="skill-tag">Communication</div>
+            <div class="skill-tag">Detail Oriented</div>
+        </div>
+    </section>
+
+    <section id="contact" class="reveal">
+        <h2>Let's Connect</h2>
+        <div class="glass-panel contact-panel">
+            <div class="contact-item">
+                <strong>Email</strong>
+                <a href="mailto:haboc.alexander.tomon@gmail.com">haboc.alexander.tomon@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <strong>Phone</strong>
+                <p>0998-227-4139</p>
+            </div>
+            <div class="contact-item">
+                <strong>Address</strong>
+                <p>64C Tolentino St. Brgy Damayan, Quezon City</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal-celestia" class="modal" onclick="closeOutside(event, 'modal-celestia')">
+        <div class="modal-content glass-panel">
+            <span class="close-btn" onclick="closeModal('modal-celestia')">&times;</span>
+            <img src="img/thecelestiahotle.jpg" alt="Celestia Hotel" class="modal-img">
+            <h2>Celestia Hotel</h2>
+            <p>A freelance project focused on building a luxury travel website, delivering a premium user experience.</p>
+            <ul class="feature-list">
+                <li>Custom frontend development for a sophisticated, modern aesthetic.</li>
+                <li>Responsive layout optimized for both desktop and mobile viewing.</li>
+                <li>Direct client communication to align design with luxury branding.</li>
+                <li>Integrated booking inquiry forms and interactive galleries.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-driver" class="modal" onclick="closeOutside(event, 'modal-driver')">
+        <div class="modal-content glass-panel">
+            <span class="close-btn" onclick="closeModal('modal-driver')">&times;</span>
+            <img src="img/driver.jpg" alt="Driver Drowsiness App" class="modal-img app-modal-img">
+            <h2>Driver Drowsiness Detection</h2>
+            <p>A smart mobile application to enhance road safety by alerting users when signs of fatigue are detected.</p>
+            <ul class="feature-list">
+                <li>Clean, modern UI/UX design featuring a welcoming onboarding screen.</li>
+                <li>Real-time processing parameters to detect facial fatigue indicators.</li>
+                <li>Intuitive navigation and accessible alert controls.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="modal-pos" class="modal" onclick="closeOutside(event, 'modal-pos')">
+        <div class="modal-content glass-panel">
+            <span class="close-btn" onclick="closeModal('modal-pos')">&times;</span>
+            <img src="img/91cafe.jpg" alt="POS System" class="modal-img">
+            <h2>Coffee Shop POS System</h2>
+            <p>A comprehensive point of sale system designed specifically for coffee shop workflows.</p>
+            <ul class="feature-list">
+                <li>Real-time inventory tracking and alerts.</li>
+                <li>Touch-optimized interface for quick order taking.</li>
+                <li>Automated daily sales reporting and analytics.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
